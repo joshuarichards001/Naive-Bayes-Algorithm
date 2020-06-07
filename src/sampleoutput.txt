@@ -1,0 +1,11 @@
+Test Instance Data=[1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0], Predicted Class: 0, Probability=0.000353
+Test Instance Data=[0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1], Predicted Class: 1, Probability=0.000045
+Test Instance Data=[1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1], Predicted Class: 1, Probability=0.000133
+Test Instance Data=[0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0], Predicted Class: 0, Probability=0.000386
+Test Instance Data=[1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1], Predicted Class: 0, Probability=0.000062
+Test Instance Data=[1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1], Predicted Class: 1, Probability=0.000028
+Test Instance Data=[0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0], Predicted Class: 0, Probability=0.000249
+Test Instance Data=[0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1], Predicted Class: 0, Probability=0.000294
+Test Instance Data=[1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1], Predicted Class: 1, Probability=0.000133
+Test Instance Data=[1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0], Predicted Class: 0, Probability=0.000534
+
