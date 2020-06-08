@@ -17,7 +17,7 @@ def file_parser(file_num):
     return instances
 
 
-# Splits (into a dictionary) the training set given into the different classes that a instance can be
+# Separate (into a dictionary) the training set given into the different classes that a instance can be
 def separate_train_by_class(train_set):
     separated_data = dict()
     for inst in train_set:
@@ -27,7 +27,7 @@ def separate_train_by_class(train_set):
     return separated_data
 
 
-# Split train_set by class then calculates the stats for each row
+# Separate train_set by class then calculates the stats for each row
 def info_by_class(train_set):
     separated = separate_train_by_class(train_set)
     col_info = dict()
@@ -40,14 +40,15 @@ def info_by_class(train_set):
 
 # Calculate the probability of each class for a given instance
 def calc_class_probabilities(class_model, inst):
-    total_rows = sum([class_model[classification][0][2] for classification in class_model])
     probabilities = dict()
     for classification, class_info in class_model.items():
-        probabilities[classification] = class_model[classification][0][2] / int(total_rows)
-        for i in range(len(class_info)):
-            class_prob = (1 / (math.sqrt(2 * math.pi) * class_info[i][1])) * \
-                   (math.exp(-((inst[i] - class_info[i][0]) ** 2 / (2 * class_info[i][1] ** 2))))
-            probabilities[classification] *= class_prob
+        probabilities[classification] = class_model[classification][0][2] / len(training_set)
+        for idx in range(len(class_info)):
+            # Elegant implementation found
+            feature_prob = (1 / (math.sqrt(2 * math.pi) * class_info[idx][1])) * \
+                           (math.exp(-((inst[idx] - class_info[idx][0]) ** 2 / (2 * class_info[idx][1] ** 2))))
+            probabilities[classification] *= feature_prob
+            # print("Instance", i, "Class", classification, "Feature", idx, "Probability", feature_prob)
     return probabilities
 
 
@@ -56,6 +57,7 @@ def predict(class_model, inst):
     probabilities = calc_class_probabilities(class_model, inst)
     class_prediction = top_probability = -1
     for classification, probability in probabilities.items():
+        print("(" + str(bool(classification)), "Probability:"'{0:f}'.format(probability), end=') ')
         if probability > top_probability:
             class_prediction, top_probability = classification, probability
     return class_prediction, top_probability
@@ -67,9 +69,7 @@ if __name__ == '__main__':
     test_set = file_parser(-1)  # Second file
 
     model = info_by_class(training_set)
-    for instance in test_set:
+    for i, instance in enumerate(test_set):
+        print("Test Instance", i, instance, end=' - ')
         predicted_class, class_probability = predict(model, instance)
-        print('Test Instance=%s, Predicted Class=%s, Probability=%s'
-              % (instance, predicted_class, '{0:f}'.format(class_probability)))
-
-
+        print("Spam =", bool(predicted_class))

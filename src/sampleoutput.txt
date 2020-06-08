@@ -1,11 +1,10 @@
-Test Instance Data=[1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0], Predicted Class: 0, Probability=0.000353
-Test Instance Data=[0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1], Predicted Class: 1, Probability=0.000045
-Test Instance Data=[1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1], Predicted Class: 1, Probability=0.000133
-Test Instance Data=[0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0], Predicted Class: 0, Probability=0.000386
-Test Instance Data=[1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1], Predicted Class: 0, Probability=0.000062
-Test Instance Data=[1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1], Predicted Class: 1, Probability=0.000028
-Test Instance Data=[0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0], Predicted Class: 0, Probability=0.000249
-Test Instance Data=[0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1], Predicted Class: 0, Probability=0.000294
-Test Instance Data=[1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1], Predicted Class: 1, Probability=0.000133
-Test Instance Data=[1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0], Predicted Class: 0, Probability=0.000534
-
+Test Instance 0 [1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0] - (True Probability:0.000001) (False Probability:0.000353) Spam = False
+Test Instance 1 [0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1] - (True Probability:0.000045) (False Probability:0.000023) Spam = True
+Test Instance 2 [1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1] - (True Probability:0.000133) (False Probability:0.000088) Spam = True
+Test Instance 3 [0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0] - (True Probability:0.000002) (False Probability:0.000386) Spam = False
+Test Instance 4 [1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1] - (True Probability:0.000037) (False Probability:0.000062) Spam = False
+Test Instance 5 [1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1] - (True Probability:0.000028) (False Probability:0.000028) Spam = True
+Test Instance 6 [0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0] - (True Probability:0.000001) (False Probability:0.000249) Spam = False
+Test Instance 7 [0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1] - (True Probability:0.000041) (False Probability:0.000294) Spam = False
+Test Instance 8 [1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1] - (True Probability:0.000133) (False Probability:0.000023) Spam = True
+Test Instance 9 [1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0] - (True Probability:0.000009) (False Probability:0.000534) Spam = False
